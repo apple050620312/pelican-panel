@@ -1,7 +1,5 @@
 <?php
-
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -12,13 +10,11 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
-    'failed' => '帳號或密碼不正確。',
-    'failed-two-factor' => '雙重驗證碼不正確',
-    'two-factor-code' => '雙重驗證碼',
-    'two-factor-hint' => '如果你無法存取裝置，可以使用備用驗證碼。',
-    'password' => '密碼不正確。',
-    'throttle' => '嘗試登入次數過多，請在 :seconds 秒後再試。',
-    '2fa_must_be_enabled' => '管理員已要求你的帳號必須啟用雙重驗證，才能使用控制面板。',
-
+    'failed' => '這些憑證與我們的記錄不符。',
+    'failed-two-factor' => '雙重認證代碼不正確',
+    'two-factor-code' => '雙重認證代碼',
+    'two-factor-hint' => '如果您無法存取您的裝置，您可以使用備用代碼。',
+    'password' => '提供的密碼不正確。',
+    'throttle' => '登入嘗試次數過多。請在 :seconds 秒後再試一次。',
+    '2fa_must_be_enabled' => '管理員要求您的帳戶必須啟用雙重認證才能使用面板。',
 ];

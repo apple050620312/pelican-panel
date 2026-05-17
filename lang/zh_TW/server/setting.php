@@ -1,5 +1,4 @@
 <?php
-
 return [
     'title' => '設定',
     'server_info' => [
@@ -15,10 +14,10 @@ return [
         'uuid_short' => '伺服器 ID',
         'node_name' => '節點名稱',
         'icon' => [
-            'upload' => '上傳圖標',
-            'tooltip' => '使用 Egg 圖標',
-            'updated' => '伺服器圖標已更新',
-            'deleted' => '伺服器圖標已刪除',
+            'upload' => '上傳圖示',
+            'tooltip' => '使用 Egg 圖示',
+            'updated' => '伺服器圖示已更新',
+            'deleted' => '伺服器圖示已刪除',
         ],
         'limits' => [
             'title' => '限制',
@@ -29,27 +28,27 @@ return [
             'disk' => '磁碟空間',
             'backups' => '備份',
             'databases' => '資料庫',
-            'allocations' => '網路分配',
-            'no_allocations' => '沒有額外網路分配',
+            'allocations' => '分配',
+            'no_allocations' => '沒有額外的分配',
         ],
         'sftp' => [
             'title' => 'SFTP 資訊',
             'connection' => '連線',
-            'action' => '連接到 SFTP',
+            'action' => '連線至 SFTP',
             'username' => '使用者名稱',
             'password' => '密碼',
-            'password_body' => '您的 SFTP 密碼與用於存取此面板的密碼相同。',
+            'password_body' => '您的 SFTP 密碼與您用來存取此面板的密碼相同。',
         ],
     ],
     'reinstall' => [
         'title' => '重新安裝伺服器',
-        'body' => '重新安裝您的伺服器將停止伺服器，然後重新執行最初設定伺服器的安裝指令碼。',
-        'body2' => '在此過程中，某些檔案可能會遭刪除或修改。請在繼續前備份您的資料。',
+        'body' => '重新安裝伺服器將會停止它，然後重新執行最初設定它的安裝腳本。',
+        'body2' => '在此過程中可能會刪除或修改某些檔案，請在繼續之前備份您的資料。',
         'action' => '重新安裝',
         'modal' => '您確定要重新安裝伺服器嗎？',
-        'modal_description' => '在此過程中，某些檔案可能會遭刪除或修改。請在繼續前備份您的資料。',
-        'yes' => '是的，重新安裝',
-        'notification_start' => '重新安裝已開始',
+        'modal_description' => '在此過程中可能會刪除或修改某些檔案，請在繼續之前備份您的資料。',
+        'yes' => '是，重新安裝',
+        'notification_start' => '已開始重新安裝',
         'notification_fail' => '重新安裝失敗',
     ],
 ];

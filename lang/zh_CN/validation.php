@@ -1,5 +1,4 @@
 <?php
-
 return [
     /*
     |--------------------------------------------------------------------------
@@ -11,75 +10,64 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-
-    'accepted' => '您必须接受 :attribute。',
-    'active_url' => ':attribute 不是一个有效的网址。',
-    'after' => ':attribute 必须要晚于 :date。',
-    'after_or_equal' => ':attribute 必须要等于 :date 或更晚。',
-    'alpha' => ':attribute 只能由字母组成。',
-    'alpha_dash' => ':attribute 只能由字母、数字、短划线(-)和下划线(_)组成。',
-    'alpha_num' => ':attribute 只能由字母和数字组成。',
+    'accepted' => ':attribute 必须被接受。',
+    'active_url' => ':attribute 不是一个有效的 URL。',
+    'after' => ':attribute 必须是一个在 :date 之后的日期。',
+    'after_or_equal' => ':attribute 必须是一个在 :date 之后或等于 :date 的日期。',
+    'alpha' => ':attribute 只能包含字母。',
+    'alpha_dash' => ':attribute 只能包含字母、数字和破折号。',
+    'alpha_num' => ':attribute 只能包含字母和数字。',
     'array' => ':attribute 必须是一个数组。',
-    'before' => ':attribute 必须要早于 :date。',
-    'before_or_equal' => ':attribute 必须要等于 :date 或更早。',
+    'before' => ':attribute 必须是一个在 :date 之前的日期。',
+    'before_or_equal' => ':attribute 必须是一个在 :date 之前或等于 :date 的日期。',
     'between' => [
-        'numeric' => ':attribute 必须介于 :min - :max 之间。',
-        'file' => ':attribute 必须介于 :min - :max KB 之间。',
-        'string' => ':attribute 必须介于 :min - :max 个字符之间。',
-        'array' => ':attribute 必须只有 :min - :max 个单元。',
+        'numeric' => ':attribute 必须在 :min 和 :max 之间。',
+        'file' => ':attribute 必须在 :min 和 :max KB 之间。',
+        'string' => ':attribute 必须在 :min 和 :max 个字符之间。',
+        'array' => ':attribute 必须有 :min 到 :max 个项。',
     ],
-
-    'confirmed' => ':attribute 两次输入不一致。',
+    'confirmed' => ':attribute 确认不匹配。',
     'date' => ':attribute 不是一个有效的日期。',
-    'date_format' => ':attribute 的格式必须为 :format。',
+    'date_format' => ':attribute 不符合格式 :format。',
     'different' => ':attribute 和 :other 必须不同。',
     'digits' => ':attribute 必须是 :digits 位数字。',
-    'digits_between' => ':attribute 必须是介于 :min 和 :max 位的数字。',
-    'dimensions' => ':attribute 图片尺寸不正确。',
-
-    'email' => ':attribute 不是一个合法的邮箱。',
-
-    'file' => ':attribute 必须是文件。',
-    'filled' => ':attribute 不能为空。',
-    'image' => ':attribute 必须是图片。',
-
-    'in_array' => ':attribute 必须在 :other 中。',
-    'integer' => ':attribute 必须是整数。',
-    'ip' => ':attribute 必须是有效的 IP 地址。',
-    'json' => ':attribute 必须是正确的 JSON 格式。',
+    'digits_between' => ':attribute 必须在 :min 和 :max 位数字之间。',
+    'dimensions' => ':attribute 的图片尺寸无效。',
+    'email' => ':attribute 必须是一个有效的电子邮件地址。',
+    'file' => ':attribute 必须是一个文件。',
+    'filled' => ':attribute 字段是必需的。',
+    'image' => ':attribute 必须是一张图片。',
+    'in_array' => ':attribute 字段在 :other 中不存在。',
+    'integer' => ':attribute 必须是一个整数。',
+    'ip' => ':attribute 必须是一个有效的 IP 地址。',
+    'json' => ':attribute 必须是一个有效的 JSON 字符串。',
     'max' => [
         'numeric' => ':attribute 不能大于 :max。',
         'file' => ':attribute 不能大于 :max KB。',
-        'string' => ':attribute 不能大于 :max 个字符。',
-        'array' => ':attribute 最多只有 :max 个单元。',
+        'string' => ':attribute 不能超过 :max 个字符。',
+        'array' => ':attribute 不能有超过 :max 个项。',
     ],
-    'mimes' => ':attribute 必须是一个 :values 类型的文件。',
-    'mimetypes' => ':attribute 必须是一个 :values 类型的文件。',
+    'mimes' => ':attribute 必须是一个文件类型：:values。',
+    'mimetypes' => ':attribute 必须是一个文件类型：:values。',
     'min' => [
-        'numeric' => ':attribute 必须大于等于 :min。',
-        'file' => ':attribute 大小不能小于 :min KB。',
+        'numeric' => ':attribute 至少为 :min。',
+        'file' => ':attribute 至少为 :min KB。',
         'string' => ':attribute 至少为 :min 个字符。',
-        'array' => ':attribute 至少有 :min 个单元。',
+        'array' => ':attribute 必须至少有 :min 个项。',
     ],
-
     'numeric' => ':attribute 必须是一个数字。',
-
-    'regex' => ':attribute 格式不正确。',
-
-    'required_with_all' => '当 :values 存在时 :attribute 不能为空。',
-
-    'same' => ':attribute 和 :other 必须相同。',
+    'regex' => ':attribute 格式无效。',
+    'required_with_all' => '当存在 :values 时，:attribute 字段是必需的。',
+    'same' => ':attribute 和 :other 必须匹配。',
     'size' => [
-        'numeric' => ':attribute 大小必须为 :size。',
-        'file' => ':attribute 大小必须为 :size KB。',
+        'numeric' => ':attribute 必须是 :size。',
+        'file' => ':attribute 必须是 :size KB。',
         'string' => ':attribute 必须是 :size 个字符。',
-        'array' => ':attribute 必须为 :size 个单元。',
+        'array' => ':attribute 必须包含 :size 个项。',
     ],
     'string' => ':attribute 必须是一个字符串。',
-    'timezone' => ':attribute 必须是一个合法的时区值。',
-
-    'url' => ':attribute 格式不正确。',
-
+    'timezone' => ':attribute 必须是一个有效的时区。',
+    'url' => ':attribute 格式无效。',
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes
@@ -90,9 +78,7 @@ return [
     | of "email". This simply helps us make messages a little cleaner.
     |
     */
-
     'attributes' => [],
-
     // Internal validation logic for Panel
     'internal' => [
         'variable_value' => ':env 变量',

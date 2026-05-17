@@ -1,16 +1,15 @@
 <?php
-
 return [
     'title' => '控制台',
     'command' => '输入命令...',
     'command_blocked' => '服务器离线...',
     'command_blocked_title' => '当服务器处于离线状态时无法发送命令',
-    'open_in_admin' => '在管理员中打开',
+    'open_in_admin' => '在管理员面板中打开',
     'power_actions' => [
         'start' => '启动',
         'stop' => '停止',
-        'restart' => '重新启动',
-        'kill' => '结束进程',
+        'restart' => '重启',
+        'kill' => '强制终止',
         'kill_tooltip' => '这可能导致数据损坏和/或数据丢失！',
     ],
     'labels' => [
@@ -25,19 +24,19 @@ return [
     ],
     'status' => [
         'created' => '已创建',
-        'starting' => '正在启动',
+        'starting' => '启动中',
         'running' => '运行中',
-        'restarting' => '正在重启',
+        'restarting' => '重启中',
         'exited' => '已退出',
         'paused' => '已暂停',
-        'dead' => '死亡',
-        'removing' => '正在删除',
-        'stopping' => '正在停止',
+        'dead' => '无响应 (Dead)',
+        'removing' => '正在移除',
+        'stopping' => '停止中',
         'offline' => '离线',
-        'missing' => '丢失',
+        'missing' => '缺失',
     ],
     'websocket_error' => [
-        'title' => '无法连接到 websocket!',
-        'body' => '查看您的浏览器控制台了解更多详情。',
+        'title' => '无法连接到 WebSocket！',
+        'body' => '请检查您的浏览器控制台了解更多详细信息。',
     ],
 ];
